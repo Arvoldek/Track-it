@@ -1,0 +1,33 @@
+// Release.xcconfig - Release-specific settings
+
+#include "App.xcconfig"
+
+// Build Settings
+SWIFT_OPTIMIZATION_LEVEL = -O
+DEBUG_INFORMATION_FORMAT = dwarf-with-dsym
+
+// Code Coverage
+GENERATE_TEST_COVERAGE_FILES = NO
+CLANG_ENABLE_CODE_COVERAGE = NO
+
+// Warnings as Errors
+GCC_TREAT_WARNINGS_AS_ERRORS = YES
+
+// Preprocessor Macros
+GCC_PREPROCESSOR_DEFINITIONS = DEBUG=0 $(inherited)
+
+// Optimization
+SWIFT_COMPILATION_MODE = wholemodule
+
+// Dead Code Stripping
+DEAD_CODE_STRIPPING = YES
+
+// Symbols
+STRIP_INSTALLED_PRODUCT = YES
+COPY_PHASE_STRIP = YES
+
+// Assertions
+ENABLE_NS_ASSERTIONS = NO
+
+// Inlining
+SWIFT_WHOLE_MODULE_OPTIMIZATION = true

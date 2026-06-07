@@ -1,0 +1,30 @@
+// Debug.xcconfig - Debug-specific settings
+
+#include "App.xcconfig"
+
+// Build Settings
+SWIFT_OPTIMIZATION_LEVEL = -Onone
+DEBUG_INFORMATION_FORMAT = dwarf-with-dsym
+
+// Code Coverage
+GENERATE_TEST_COVERAGE_FILES = YES
+CLANG_ENABLE_CODE_COVERAGE = YES
+
+// Warnings as Errors
+GCC_TREAT_WARNINGS_AS_ERRORS = NO
+
+// Preprocessor Macros
+GCC_PREPROCESSOR_DEFINITIONS = DEBUG=1 $(inherited)
+
+// Optimization
+SWIFT_COMPILATION_MODE = singlefile
+
+// Dead Code Stripping
+DEAD_CODE_STRIPPING = NO
+
+// Symbols
+STRIP_INSTALLED_PRODUCT = NO
+COPY_PHASE_STRIP = NO
+
+// Logging
+ENABLE_NS_ASSERTIONS = YES
