@@ -1,0 +1,21 @@
+system_prompt_id = "ios-swift-native"
+file_watcher_for_autocomplete = true
+
+[[models]]
+name = "mistral-vibe-cli-latest"
+provider = "mistral"
+alias = "mistral-medium-3.5"
+thinking = "medium"
+supports_images = true
+
+[[models]]
+name = "devstral-small-latest"
+provider = "mistral"
+alias = "devstral-small"
+thinking = "off"
+
+[[models]]
+name = "devstral"
+provider = "llamacpp"
+alias = "local"
+thinking = "off"
